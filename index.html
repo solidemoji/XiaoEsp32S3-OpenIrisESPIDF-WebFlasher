@@ -115,6 +115,14 @@
                     <span class="en">🚀 Flash FaceTracker (50Hz)</span>
                 </button>
             </esp-web-install-button>
+
+            <!-- Lighthouse灰屏修复 按钮，指向 manifest_lighthouse.json -->
+            <esp-web-install-button manifest="./manifest_lighthouse.json">
+                <button slot="activate" class="flash-btn btn-dark">
+                    <span class="zh">🚀 刷入 FaceTracker (Lighthouse灰屏修复)</span>
+                    <span class="en">🚀 Flash FaceTracker (Lighthouse Fix)</span>
+                </button>
+            </esp-web-install-button>
         </div>
         
         <p style="margin-top: 40px; font-size: 12px; color: #b2bec3; text-align: center;">
@@ -128,6 +136,14 @@
             <b class="en" style="color: var(--warning);">⚠️ Upgrade Notice</b>
             <p class="zh">建议 <b>2026.4.2</b> 日之前购买的设备都重新刷入此版本。新版固件适配最新版 ETVR 桌面端，支持在工具内直接切换 <b>有线/无线</b> 模式，配网更方便。</p>
             <p class="en">Devices purchased before <b>2026.4.2</b> are recommended to re-flash. Supports <b>Wired/Wireless</b> switching via the latest ETVR tool.</p>
+        </div>
+
+        <!-- 新增 Lighthouse 灰屏修复注释 -->
+        <div class="notice-box" style="background: #e8f4fd; border-left-color: var(--primary);">
+            <b class="zh" style="color: var(--primary);">🥽 Lighthouse VR 修复</b>
+            <b class="en" style="color: var(--primary);">🥽 Lighthouse VR Fix</b>
+            <p class="zh" style="margin-bottom: 0;">如果你在使用 Index 或者 Bigscreen 等 lighthouse 定位 VR 头显时遇到频繁灰屏或丢失追踪，请尝试使用“LighthouseVR灰屏修复”版固件。</p>
+            <p class="en" style="margin-bottom: 0;">If you experience frequent grey screens or tracking loss when using Lighthouse-tracked VR headsets like Valve Index or Bigscreen, please try the "Lighthouse Fix" firmware.</p>
         </div>
 
         <div class="step">
