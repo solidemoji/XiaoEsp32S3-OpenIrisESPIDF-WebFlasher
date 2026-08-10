@@ -1,0 +1,16 @@
+{
+  "name": "FaceTracker (Powered by OpenIris-ESPIDF)",
+  "version": "1.0.2",
+  "new_install_prompt_erase": true,
+  "builds": [
+    {
+      "chipFamily": "ESP32-S3",
+      "parts": [
+        { "path": "bootloader.bin", "offset": 0 },
+        { "path": "partition-table.bin", "offset": 32768 },
+        { "path": "ota_data_initial.bin", "offset": 53248 },
+        { "path": "OpenIris-ESPIDF-Lighthouse.bin", "offset": 65536 }
+      ]
+    }
+  ]
+}
