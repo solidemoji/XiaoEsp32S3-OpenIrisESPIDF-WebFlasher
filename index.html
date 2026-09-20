@@ -123,6 +123,14 @@
                     <span class="en">🚀 Flash FaceTracker (Lighthouse Fix)</span>
                 </button>
             </esp-web-install-button>
+
+            <!-- 60Hz NOCDC 按钮（特殊情况选项，放最下方），指向 manifest_60hz_nocdc.json -->
+            <esp-web-install-button manifest="./manifest_60hz_nocdc.json">
+                <button slot="activate" class="flash-btn btn-dark">
+                    <span class="zh">🚀 刷入 FaceTracker (60Hz 无 CDC 版)</span>
+                    <span class="en">🚀 Flash FaceTracker (60Hz No-CDC)</span>
+                </button>
+            </esp-web-install-button>
         </div>
         
         <p style="margin-top: 40px; font-size: 12px; color: #b2bec3; text-align: center;">
@@ -144,6 +152,14 @@
             <b class="en" style="color: var(--primary);">🥽 Lighthouse VR Fix</b>
             <p class="zh" style="margin-bottom: 0;">如果你在使用 Index 或者 Bigscreen 等 lighthouse 定位 VR 头显时遇到频繁灰屏或丢失追踪，请尝试使用“LighthouseVR灰屏修复”版固件。</p>
             <p class="en" style="margin-bottom: 0;">If you experience frequent grey screens or tracking loss when using Lighthouse-tracked VR headsets like Valve Index or Bigscreen, please try the "Lighthouse Fix" firmware.</p>
+        </div>
+
+        <!-- 新增 NOCDC 版本注释 -->
+        <div class="notice-box" style="background: #eef7ee; border-left-color: #34c759;">
+            <b class="zh" style="color: #248a3d;">🔌 60Hz 无 CDC 版</b>
+            <b class="en" style="color: #248a3d;">🔌 60Hz No-CDC</b>
+            <p class="zh" style="margin-bottom: 0;">该版本去掉了 USB CDC 虚拟串口，只保留 UVC 视频通道。如果你不需要通过串口通信，或者在使用某些主机/扩展坞时遇到设备识别异常、USB 接口冲突（例如只有单 USB 直连），可以尝试此版本。</p>
+            <p class="en" style="margin-bottom: 0;">This build removes the USB CDC virtual serial port and keeps only the UVC video channel. Try it if you don't need serial communication, or if you hit device-recognition issues / USB interface conflicts with certain hosts or hubs (e.g. single direct USB connection).</p>
         </div>
 
         <div class="step">
